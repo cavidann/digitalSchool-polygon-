@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.img-container{
+    width: 550px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-clip-path: polygon(47% 3%, 59% 15%, 70% 15%, 94% 0, 94% 33%, 91% 39%, 98% 45%, 98% 65%, 80% 73%, 69% 100%, 40% 100%, 7% 81%,5% 75%,0% 72%,0% 67%,2% 64%,1% 61%,1% 45%);
+    clip-path: polygon(47% 3%, 59% 15%, 70% 15%, 94% 0, 94% 33%, 91% 39%, 98% 45%, 98% 65%, 80% 73%, 69% 100%, 40% 100%, 7% 81%,5% 75%,0% 72%,0% 67%,2% 64%,1% 61%,1% 45%);
+    /* background: #00259a; */
+    text-align: right;
+
+    /* background: linear-gradient(87deg, #009606, #009b96 35%); */
+
+    background: linear-gradient(270deg, #009606, #a1ac00, #00559b, #56009b, #919b00, #009b96);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: wolf-animation 30s ease infinite;
+    -moz-animation: wolf-animation 30s ease infinite;
+    animation: wolf-animation 30s ease infinite;
+
+    transition: 0.3s linear;
+}
+
+.img-container h1{
+    position: absolute;
+    border-left: 4px solid white;
+    display: inline-block;
+    top: 30%;
+    right: 13%;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    width: 40%;    
+
+    
+}
+
+.gradient-animation{
+    height: 100vh;
+    background: linear-gradient(162deg, #57005b, #9a005d, #00849a, #009a57, #00259a, #3e9a00);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: gradinet 30s ease infinite;
+    -moz-animation: gradinet 30s ease infinite;
+    animation: gradinet 30s ease infinite;
+
+}
+
+@-webkit-keyframes gradinet {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+
+@-moz-keyframes gradinet {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+
+@keyframes gradinet { 
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+
+
+@-webkit-keyframes wolf-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes wolf-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes wolf-animation { 
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
